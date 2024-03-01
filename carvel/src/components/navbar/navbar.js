@@ -9,10 +9,10 @@ function NavBar() {
 
       <div className="container-options-navigation">
         <div className="options-navigation">
-          <ul>
-            <li><button>Comprar</button></li>
-            <li><button>Vender</button></li>
-            <li><button>Serviços</button></li>
+          <ul id='listOptionsNavBar'>
+            <li className='optionsNavBar'><button>Comprar</button></li>
+            <li className='optionsNavBar'><button>Vender</button></li>
+            <li className='optionsNavBar'><button>Serviços</button></li>
           </ul>
         </div>
       </div>

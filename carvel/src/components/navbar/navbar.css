@@ -22,7 +22,7 @@
   
 } */
 
-ul{
+#listOptionsNavBar{
   list-style: none;
   margin: 0;
   display: flex;
@@ -31,11 +31,11 @@ ul{
   justify-content: center;
 }
 
-li{
+.optionsNavBar{
   padding: 1%;
   margin-right: 2%;
-  border-radius: 15px;
   cursor: pointer;
+  
 }
 
 button{
@@ -45,10 +45,11 @@ button{
   font-size: 90%;
   text-transform: uppercase;
   letter-spacing: 1px;
+  
 }
 
-li:hover{
-  background-color: rgb(250, 250, 250);
+.optionsNavBar:hover{
+  border-bottom: solid 2px #e22446;
 }
 
 
