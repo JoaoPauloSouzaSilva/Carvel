@@ -1,31 +1,28 @@
 .containerScreenVender{
-  background-color: rgb(194, 194, 255);
-  margin-top: 0.2%;
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(255, 255, 255);
 }
 
-.mainScreenVender{
+.mainScreenVender01{
   width: 80%;
   height: auto;
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
 
 }
 
 .left{
-  width: 50%;
+  width: 40%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: left;
   text-align: left;
-  background-color: rgb(240, 238, 238);
 }
 
 /* .containerTextScreenVender{
@@ -36,7 +33,12 @@
   font-size: 270%;
   text-align: left;
   margin-left: 0;
-  margin-right: 3%;
+  margin-right: 10%;
+  margin-top: 10%;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 mark{
@@ -45,7 +47,7 @@ mark{
 }
 
 #actionScreenVender{
-  width: 30%;
+  width: 35%;
   background-color: #e22446;
   padding: 3%;
   border-radius: 10px;
@@ -54,6 +56,7 @@ mark{
   color: #fff;
   margin-top: 8%;
   font-weight: bolder;
+  margin-bottom: 10%;
 }
 
 #actionScreenVender:hover{
@@ -61,6 +64,14 @@ mark{
 }
 
 .right{
-  width: 50%;
+  width: 60%;
   height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#carrosScreenVender{
+  width: 90%;
 }
