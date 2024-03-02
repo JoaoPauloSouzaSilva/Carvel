@@ -30,7 +30,7 @@ function ScreenVender() {
               <ul className="listMotivos">
 
                 <li className='motivos'>
-                  <img className='imageMotivos' src="/motivo02.png" alt="Motivo 01" />
+                  <img className='imageMotivos' src="/motivo01.png" alt="Motivo 01" />
                   <p className='titleMotivos'>Milhões de compradores!</p>
                   <p className='textMotivos'>São 80 milhões de pessoas de olho na Carvel.</p>
                 </li>
@@ -42,13 +42,13 @@ function ScreenVender() {
                 </li>
 
                 <li className='motivos'>
-                  <img className='imageMotivos' src="/motivo02.png" alt="Motivo 03" />
+                  <img className='imageMotivos' src="/motivo03.png" alt="Motivo 03" />
                   <p className='titleMotivos'>Vendas com Financiamento</p>
                   <p className='textMotivos'>Aproveite os mlehores beneficios e venda financiando par pessoas físicas.</p>
                 </li>
 
                 <li className='motivos'>
-                  <img className='imageMotivos' src="/motivo02.png" alt="Motivo 04" />
+                  <img className='imageMotivos' src="/motivo04.png" alt="Motivo 04" />
                   <p className='titleMotivos'>Prático, intuitivo e muito fácil!</p>
                   <p className='textMotivos'>Anuncie seu veiculo na Carvel e venda em poucos passos.</p>
                 </li>
@@ -69,6 +69,8 @@ function ScreenVender() {
         <div className='containerOpnioes'>
         <div className='mainOpnioes'>
             <ul className="listOpnioes">
+
+              
               <li className='Opnioes'>
                 <div className='topOpnioes'>
                   <img className='imageOpnioes' src="/user.png" alt="People" />
@@ -78,7 +80,7 @@ function ScreenVender() {
                   <p className='textOpnioes'>"Já vendi e comprei carros pela Carvel. Tudo muito tranquilo e seguro."</p>
                 </div>
               </li>
-
+                            
               <li className='Opnioes'>
                 <div className='topOpnioes'>
                   <img className='imageOpnioes' src="/user.png" alt="People" />
@@ -88,7 +90,7 @@ function ScreenVender() {
                   <p className='textOpnioes'>"Creio ser o melhor meio de anuncio automotivo."</p>
                 </div>
               </li>
-
+                            
               <li className='Opnioes'>
                 <div className='topOpnioes'>
                   <img className='imageOpnioes' src="/user.png" alt="People" />
@@ -98,7 +100,7 @@ function ScreenVender() {
                   <p className='textOpnioes'>"Tive experiência anterior na venda de um outro carro meu e foi muito rápido e descomplicado."</p>
                 </div>
               </li>
-
+                            
               <li className='Opnioes'>
                 <div className='topOpnioes'>
                   <img className='imageOpnioes' src="/user.png" alt="People" />
@@ -108,9 +110,47 @@ function ScreenVender() {
                   <p className='textOpnioes'>"Facilidade de cadastro e informações mercadológicas sobre o preço praticado na minha cidade."</p>
                 </div>
               </li>
-
+                            
+              {/* <li className='Opnioes'>
+                <div className='topOpnioes'>
+                  <img className='imageOpnioes' src="/user.png" alt="People" />
+                  <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
+                </div>
+                <div className='containerTextOpnioes'>
+                  <p className='textOpnioes'>"Já vendi e comprei carros pela Carvel. Tudo muito tranquilo e seguro."</p>
+                </div>
+              </li>
               
-
+              <li className='Opnioes'>
+                <div className='topOpnioes'>
+                  <img className='imageOpnioes' src="/user.png" alt="People" />
+                  <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
+                </div>
+                <div className='containerTextOpnioes'>
+                  <p className='textOpnioes'>"Creio ser o melhor meio de anuncio automotivo."</p>
+                </div>
+              </li>
+              
+              <li className='Opnioes'>
+                <div className='topOpnioes'>
+                  <img className='imageOpnioes' src="/user.png" alt="People" />
+                  <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
+                </div>
+                <div className='containerTextOpnioes'>
+                  <p className='textOpnioes'>"Tive experiência anterior na venda de um outro carro meu e foi muito rápido e descomplicado."</p>
+                </div>
+              </li>
+              
+              <li className='Opnioes'>
+                <div className='topOpnioes'>
+                  <img className='imageOpnioes' src="/user.png" alt="People" />
+                  <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
+                </div>
+                <div className='containerTextOpnioes'>
+                  <p className='textOpnioes'>"Facilidade de cadastro e informações mercadológicas sobre o preço praticado na minha cidade."</p>
+                </div>
+              </li> */}
+              
             </ul>
           </div>
         </div>
