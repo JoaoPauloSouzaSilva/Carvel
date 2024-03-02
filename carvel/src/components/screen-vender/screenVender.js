@@ -1,7 +1,8 @@
+import React from 'react';
 import './screenVender.css';
 
 
-function ScreenVender() {
+function ScreenVender({ onLogin }) {
   return (
     <div className="containerScreenVender">
       <div className="mainScreenVender01">
@@ -11,7 +12,7 @@ function ScreenVender() {
             Somos o melhor lugar para você <mark> vender seu veiculo rápido</mark>.
           </h1>
           </div>
-          <button id="actionScreenVender01">
+          <button id="actionScreenVender01" onClick={onLogin}>
             Vender Veiculo
           </button>  
         </div>
@@ -56,7 +57,7 @@ function ScreenVender() {
               </ul>
             </div>
           </div>
-          <button id="actionScreenVender02">
+          <button id="actionScreenVender02" onClick={onLogin}>
             Vender Veiculo
           </button>
       </div>
@@ -110,47 +111,55 @@ function ScreenVender() {
                   <p className='textOpnioes'>"Facilidade de cadastro e informações mercadológicas sobre o preço praticado na minha cidade."</p>
                 </div>
               </li>
+          
+            </ul>
+          </div>
+        </div>
+
+        <div className='containerOpnioes'>
+        <div className='mainOpnioes'>
+            <ul className="listOpnioes">
+
+              <li className='Opnioes'>
+                <div className='topOpnioes'>
+                  <img className='imageOpnioes' src="/user.png" alt="People" />
+                  <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
+                </div>
+                <div className='containerTextOpnioes'>
+                  <p className='textOpnioes'>"Ótimo atendimento! Encontrei o carro dos meus sonhos com a ajuda atenciosa da equipe."</p>
+                </div>
+              </li>
                             
-              {/* <li className='Opnioes'>
-                <div className='topOpnioes'>
-                  <img className='imageOpnioes' src="/user.png" alt="People" />
-                  <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
-                </div>
-                <div className='containerTextOpnioes'>
-                  <p className='textOpnioes'>"Já vendi e comprei carros pela Carvel. Tudo muito tranquilo e seguro."</p>
-                </div>
-              </li>
-              
               <li className='Opnioes'>
                 <div className='topOpnioes'>
                   <img className='imageOpnioes' src="/user.png" alt="People" />
                   <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
                 </div>
                 <div className='containerTextOpnioes'>
-                  <p className='textOpnioes'>"Creio ser o melhor meio de anuncio automotivo."</p>
+                  <p className='textOpnioes'>"Excelente variedade de veículos e preços competitivos. Recomendo!"</p>
                 </div>
               </li>
-              
+                            
               <li className='Opnioes'>
                 <div className='topOpnioes'>
                   <img className='imageOpnioes' src="/user.png" alt="People" />
                   <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
                 </div>
                 <div className='containerTextOpnioes'>
-                  <p className='textOpnioes'>"Tive experiência anterior na venda de um outro carro meu e foi muito rápido e descomplicado."</p>
+                  <p className='textOpnioes'>"A venda do meu carro foi rápida e sem complicações. Estou muito satisfeito com a minha escolha."</p>
                 </div>
               </li>
-              
+                            
               <li className='Opnioes'>
                 <div className='topOpnioes'>
                   <img className='imageOpnioes' src="/user.png" alt="People" />
                   <img className='starsOptions' src="/estrelas.png" alt="Eavaliação" />
                 </div>
                 <div className='containerTextOpnioes'>
-                  <p className='textOpnioes'>"Facilidade de cadastro e informações mercadológicas sobre o preço praticado na minha cidade."</p>
+                  <p className='textOpnioes'>"A loja possui uma equipe muito profissional e prestativa. Fiquei impressionado com o serviço oferecido."</p>
                 </div>
-              </li> */}
-              
+              </li>
+          
             </ul>
           </div>
         </div>
