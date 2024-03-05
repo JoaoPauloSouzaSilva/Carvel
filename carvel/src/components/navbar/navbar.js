@@ -11,16 +11,17 @@ function NavBar({Navigation}) {
       <div className="container-options-navigation">
         <div className="options-navigation">
           <ul id='listOptionsNavBar'>
-            <li className='optionsNavBar'><button onClick={() => Navigation(0)}>Início</button></li>
-            <li className='optionsNavBar'><button onClick={() => Navigation(1)}>Comprar</button></li>
-            <li className='optionsNavBar'><button onClick={() => Navigation(2)}>Vender</button></li>
-            <li className='optionsNavBar'><button onClick={() => Navigation(3)}>Serviços</button></li>
+            <li className='optionsNavBar' onClick={() => Navigation(0)}>Início</li>
+            <li className='optionsNavBar' onClick={() => Navigation(1)}>Comprar</li>
+            <li className='optionsNavBar' onClick={() => Navigation(2)}>Vender</li>
+            <li className='optionsNavBar' onClick={() => Navigation(3)}>Serviços</li>
           </ul>
         </div>
       </div>
 
      <div className="option-login">
-        <button id="button-login" onClick={() => Navigation(4)}>
+        {/* <button id="button-login" onClick={() => Navigation(4)}> */}
+        <button id="button-login">
           <img id="icon-user" src="/user.png" alt="Login" />
           <p>Entrar</p>
         </button>

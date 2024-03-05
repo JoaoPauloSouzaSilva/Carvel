@@ -1,20 +1,50 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './screenVender.css';
 
 
-function ScreenVender({ onLogin }) {
+// function ScreenVender({ onLogin }) {
+  function ScreenVender() {
+    const button1Ref = useRef(null);
+    const button2Ref = useRef(null);
+    const button3Ref = useRef(null);
+
+    useEffect(() => {
+      const handleClickVender = () => {
+        window.open('https://api.whatsapp.com/send/?phone=55038999063100&text=Ol%C3%A1%2C+estou+interessado+em+vender+meu+ve%C3%ADculo+atrav%C3%A9s+da+Carvel.&type=phone_number&app_absent=0', '_blank');
+      };
+
+      const handleClickDuvida = () => {
+        window.open('https://api.whatsapp.com/send/?phone=55038999063100&text=Ol%C3%A1%2C+tenho+uma+d%C3%BAvida+que+gostaria+de+esclarecer.&type=phone_number&app_absent=0', '_blank');
+      };
+
+      const button1 = button1Ref.current;
+      const button2 = button2Ref.current;
+      const button3 = button3Ref.current;
+  
+      button1.addEventListener('click', handleClickVender);
+      button2.addEventListener('click', handleClickVender);
+      button3.addEventListener('click', handleClickDuvida);
+  
+      return () => {
+        button1.removeEventListener('click', handleClickVender);
+        button2.removeEventListener('click', handleClickVender);
+        button3.removeEventListener('click', handleClickDuvida);
+      };
+    }, []);
+
   return (
     <div className="containerScreenVender">
       <div className="mainScreenVender01">
         <div className="left">
           <div className="containerTextScreenVender">
           <h1 id="titleScreenVender">
-            Somos o melhor lugar para você <mark> vender seu veiculo rápido</mark>.
+            Somos o melhor lugar para você <mark> vender seu veículo rápido</mark>.
           </h1>
           </div>
-          <button id="actionScreenVender01" onClick={onLogin}>
-            Vender Veiculo
-          </button>  
+          {/* <button id="actionScreenVender01" onClick={onLogin}> */}
+          <button id="actionScreenVender01" ref={button1Ref}>
+              Vender Veiculo
+            </button>  
         </div>
         <div className="right">
           <img id="carrosScreenVender" src="/carros.png" alt="Carros" />
@@ -57,9 +87,11 @@ function ScreenVender({ onLogin }) {
               </ul>
             </div>
           </div>
-          <button id="actionScreenVender02" onClick={onLogin}>
-            Vender Veiculo
-          </button>
+          {/* <button id="actionScreenVender02" onClick={onLogin}> */}
+            <button id="actionScreenVender02" ref={button2Ref}>
+              Vender Veiculo
+            </button>
+      
       </div>
 
       <div className='maincreenVender03'>
@@ -169,7 +201,7 @@ function ScreenVender({ onLogin }) {
             Ainda com dúvidas relacionadas a vender na Carvel?
           </h5>
 
-          <button id='buttonScreenVenderWhatsapp'>
+          <button id='buttonScreenVenderWhatsapp' ref={button3Ref}>
             <img id='imageWhatsappScreenVender' src="/whatsapp.png" alt="Logo whatsapp" />
             <p id='textWhatsappScreenVender' >Acesse o SAC</p>
           </button>
